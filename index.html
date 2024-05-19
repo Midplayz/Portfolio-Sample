@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Srivishnu Srinivasan - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Srivishnu Srinivasan
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          midnightassassinmc@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +91 7200890513
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/art.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Srivishnu Srinivasan! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            Hey there! I'm a game dev passionate about creating immersive experiences with Unity and C#. 
+            I’ve built complex mobile apps for iOS and Android, including a standout arcade-style plane combat game featuring smart AI enemies powered by machine learning. 
+            I love pushing the boundaries of game development with my technical skills and creativity, always striving to make a big impact in the gaming world and beyond.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+       <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div> 
+
+
+        <div class="skill">
+          <img src="html_finalprojimages/unity.png"/>
+          <h6>Unity 2D & 3D</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/cs.png"/>
+          <h6>C#</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/ps.png"/>
+          <h6>Photoshop</h6>
+          <p>5 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/ill.png"/>
+          <h6>Illustrator</h6>
+          <p>5 years experience</p>
+        </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>AI Comics Generator</h3>
+            <ul>
+              <li>Developed an App that generates full fledged comics including the story and comic pages from just a few words as input.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>ML Powered Game</h3>
+            <ul>
+              <li>Developed and Published a Unity-Made game where all the AI Opponents were trained using Machine Learning.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Portfolio Site</h3>
+            <ul>
+              <li>Created a website to showcase my projects using HTML, CSS and Javascript.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Vishnu is a fast learner who quickly masters key concepts in web development. 
+          He has a great attitude and excels as a team player. With a curious mind, he always asks the right questions. 
+          Vishnu takes initiative within the team and has the potential to become a strong leader.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Vishnu has been an awesome experience. 
+          He is highly knowledgeable and always goes the extra mile to ensure everything is perfect. 
+          For any future projects that require his expertise, I would definitely want to work with him again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          
+I had the pleasure of working with Vishnu during the initial phase of our venture, which required web development. 
+He is a dedicated professional with in-depth knowledge of the domain. 
+Vishnu will be an asset to any organization!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px" transform="translate(0, 2)">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5" />
+        </svg>              
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for the Recommendation!</h3>
+      <button onclick="showPopup(false); addRecommendation();">Ok</button>
+    </div>
+  </body>
+</html>
